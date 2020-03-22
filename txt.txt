@@ -1,0 +1,5 @@
+    @ObservedObject var lm = LocationEngine()
+    @ObservedObject var mm = MotionEngine()
+
+    var lastLocationSample: LocationTelemetrySample? { return lm.currentSample }
+    var lastMotionSample: MotionTelemetrySample? { return mm.currentSample }
