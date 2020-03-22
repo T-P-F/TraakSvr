@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  TRKSessionPut:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: TRK_Session_Put
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: >-
+        arn:aws:iam::475512417340:role/service-role/TRK_Session_Put-role-2yc2htlr
+      Runtime: nodejs12.x
+      Timeout: 3
